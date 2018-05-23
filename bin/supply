@@ -13,6 +13,7 @@ output_dir=$(mktemp -d -t supplyXXX)
 echo "-----> Running go build supply"
 echo "-----> Sup DAWGS"
 echo $(whoami)
+ls -la /
 
 GOROOT=$GoInstallDir/go GOPATH=$BUILDPACK_DIR $GoInstallDir/go/bin/go build -o $output_dir/supply staticfile/supply/cli
 
